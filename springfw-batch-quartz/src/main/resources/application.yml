@@ -1,0 +1,17 @@
+spring:
+  profiles:
+    active: mysql
+---
+spring:
+  batch:
+    job:
+      enabled: false
+  datasource:
+  # Input your Datasource Data
+    url: jdbc:mysql://localhost:3306/job_schema
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  config:
+    activate:
+      on-profile: mysql
