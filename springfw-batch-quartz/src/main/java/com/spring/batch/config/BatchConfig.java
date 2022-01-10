@@ -19,7 +19,7 @@ import com.spring.batch.step.Writer;
 public class BatchConfig {
 
 	@Autowired
-	public JobBuilderFactory jobBuilderFactory;
+	public JobBuilderFactory jobBuilderFactory; //
 
 	@Autowired
 	public StepBuilderFactory stepBuilderFactory;
